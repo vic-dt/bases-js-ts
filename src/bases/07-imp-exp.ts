@@ -4,7 +4,7 @@ console.log(dominis)
 
 console.log(heroum);
 
-export const obtineHeroPerId = (id: number) => heroum.find( heros => heros.id === id) ?? {};
+export const obtineHeroPerId = (id: number) => heroum.find( heros => heros.id === id);
 
 console.log(obtineHeroPerId(3));
 
