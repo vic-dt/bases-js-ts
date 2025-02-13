@@ -1,7 +1,8 @@
 // console.log('inicio');
 
-import { Heros } from "../data/heroum";
+import type { Heros } from "../data/heroum";
 import { obtineHeroPerId } from "./07-imp-exp"
+
 
 // new Promise((resolve, reject)=> {
 //     console.log('cuerpo de la promesa');
@@ -34,7 +35,7 @@ return new Promise((resolve, reject)=> {
         //     reject('El héroe con id: ${id} no ha sido encontrado')
         // }
 
-        heros ? resolve(heros as Heros) : rejectreject('El héroe con id: ${id} no ha sido encontrado');
+        heros ? resolve(heros as Heros) : reject('El héroe con id: ${id} no ha sido encontrado');
     }, 1500);
 })
 }
